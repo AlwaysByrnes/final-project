@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title> Byrnes's Bakery</title>
+    <meta name="author" content="Cody Byrnes">
+    <meta name="description" content="Cody Byrnes's Bakery for the greatest cookies">
+    <!-- link to stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/x-icon" href="images/mountain-favicon.png">
+</head>
+
+<body>
+    <header>
+        <h1><a href="index.html" class="active"> Byrne's Resort</a></h1>
+        <nav>
+            <ul>
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="#" class="active">Accommodations</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section id="contact">
+            <div>
+            <h2>Contact Us</h2>
+            <p>Please reach out to us with any questions or concerns. We are happy to help you plan your dream vacation with us!
+            Required fields marked with a *</p>
+            <img src="images/swiss-peak.jpg" alt="Swiss Peak" title="Swiss Peak"></div>
+            <section id="form">
+               
+                <form action="https://wp.zybooks.com/form-viewer.php" method="POST" target="_blank">
+                    <label for="full-name">Full Name: <span class="required">*</span></label>
+                    <input type="text" name="full-name" id="full-name" placeholder="Add name" required>
+
+                    <label for="email">Email Adress: <span class="required">*</span></label>
+                    <input type="email" name="email" id="email" placeholder="Add email" required>
+
+                    <label for="phone">Phone Number: <span class="required">*</span></label>
+                    <input type="tel" name="phone" id="phone" placeholder="Add number" required>
+
+                    <fieldset>
+                        <legend>Preferred Method of Contact: *<span class="required"></span></legend>
+
+                        <input type="radio" name="contact-preference" id="preference-email" checked>
+                        <label for="preference-email">Email</label>
+
+                        <input type="radio" name="contact-preference" id="preference-phone" checked>
+                        <label for="preference-email">Phone</label>
+                    </fieldset>
+
+                    <label for="comments">Comments: <span class="required">*</span></label>
+                    <textarea name="comments" id="comments" placeholder="Add comments" required></textarea>
+                    <input type="submit" name="my-submit" id="my-submit" value="Submit">
+                </form>
+            </section>
+        </section>
+    </main>
+        <footer>
+            <p>Copyright &copy;2025 - Byrnes's Resort</p>
+            <p>This site is for educational purposes only</p>
+        </footer>
+        
+    
+
+</body>
+
+</html>

@@ -1,0 +1,251 @@
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    
+}
+:root{
+    --hf-color: rgb(192, 192, 192);
+    --h1-color: rgb(74, 161, 157);
+    --link-color: rgb(255, 255, 255);
+    --link-bg-color: rgb(124, 189, 219);
+    --form-star-color: rgb(131, 9, 9);
+    --input-color: rgb(49, 4, 4);
+    --bg-color: rgb(81, 97, 96);
+    --btn-color: rgb(23, 172, 177);
+    --body-font: "Lato", sans-serif;
+    --heading-fonts: Cambria,
+            Cochin,
+            Georgia,
+            Times,
+            'Times New Roman',
+            serif;
+    --link-font: cursive;
+    --font-size: 1.3rem;
+    --form-color: rgb(162, 202, 162);
+    --form-focus-color: rgb(206, 212, 206);
+    --btn-color-hov: rgb(230, 230, 230);
+    --heading-bg-color: rgb(197, 104, 104);
+    --heading-color: white;
+    
+}
+
+
+body{
+    background-color: var(--bg-color);
+    font-family: var(--body-font);
+    font-size: var(--font-size);
+    line-height: 1.5;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+header{
+    display: block;
+    padding: 10px;
+
+}
+
+header, footer{
+    background-image: url("images/swiss-valley.jpg");
+    text-align: center;
+}
+
+header, main, footer{
+    margin: 0 auto;
+    background-color: var(--hf-color);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+nav{
+    margin: 0 auto;
+    width: 50%;
+    padding: 50px;
+}
+nav ul{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 0;
+    list-style-type: none;
+    
+}
+nav a{
+    text-decoration: none;
+    background-color: var(--link-bg-color);
+    padding: 30px;
+    border-radius: 35px;
+    color: var(--link-color);
+    font-family: var(--link-font);
+}
+nav a:hover{
+    background-color: var(--hf-color);
+    
+}
+h1{
+   
+    font-weight: 300;
+    font-style: italic;
+    
+    display: block;
+}
+
+h1 a {
+    text-decoration: none;
+    font-weight: bold;
+    color: var(--h1-color);
+    background-color: var(--h1-background);
+    border-radius: 20px;
+    padding: 10px;
+    
+}
+
+h2{
+    display: block;
+    text-align: center;
+    color: var(--heading-color);
+    background-color: var(--heading-bg-color);
+    font-family: var(--heading-fonts);
+    font-style: italic;
+    font-weight: bold;
+    
+}
+h3{
+    display: block;
+    font-family: var(--heading-fonts);
+    font-style: italic;
+    color: var(--heading-color);
+    background-color: var(--heading-bg-color);
+}
+main{
+    max-width: 1440px;
+    margin: 0 auto;
+    box-shadow: 6px 6px 6px gray;
+}
+main > section{
+    
+    text-align: center;
+    padding: 10px;
+    
+}
+p{
+    max-width: 60ch;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+form{
+    width: 300px;
+    margin: 0 auto;
+    padding: 24px;
+    background-color: var(--form-color);
+    box-shadow: 6px 6px 6px gray;
+   
+}
+label{
+    font-weight: bold;
+}
+input, label, textarea{
+    display: block;
+    font-size: 1.3rem;
+    
+}
+
+select{
+    appearance: none;
+    margin: 16px auto;
+    font-style: normal;
+    font-weight: normal;
+    
+}
+
+#spots{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 56px 32px;
+    gap: 30px;
+    margin-left: 90px;
+}
+
+#contact{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 64px 32px;
+    gap: 20px;
+    justify-content: center;
+}
+div{
+    display: block;
+}
+.required{
+    color: var(--form-star-color);
+}
+
+input, textarea{
+    margin: 0.25rem 0 1rem 0;
+    border: 5px solid var(--input-color);
+}
+
+input {
+    height: 3rem;
+    width: 100%;
+    
+}
+
+fieldset{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 1rem;
+    border-width: 5px;
+    border-style: groove;
+    font-weight: bold;
+    
+}
+
+input[type=radio]{
+    
+    cursor: pointer;
+}
+
+input[type=submit]{
+    cursor: pointer;
+    background-color: var(--bg-color);
+    font-size: 2rem;
+    font-weight: bold;
+    border: none;
+    font-weight: bold;
+    border-radius: 50%;
+    box-shadow: 6px 6px 6px gray;
+}
+input:focus,textarea:focus{
+    background-color: var(--form-focus-color);
+    
+}
+
+#my-submit:hover{
+    color: var(--btn-color-hov);
+    transform: scale(1.1);
+}
+
+input[type="submit"]:focus{
+    outline: 3px rgb(1, 1, 29);
+}
+
+img{
+    cursor: pointer;
+    width: 400px;
+    padding: 20px;
+    box-shadow: 6px 6px 6px gray;
+    margin: 0 auto;
+    border: 20px;
+}
+textarea{
+    width: 100%;
+    height: 100px;
+}
+
+footer{
+    margin: 0 auto;
+}
+
